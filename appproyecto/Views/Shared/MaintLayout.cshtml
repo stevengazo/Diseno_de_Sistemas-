@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="~/appproyecto.styles.css" asp-append-version="true" />
 </head>
 <body class="m-2 d-flex gap-4 m-0" style="height: 90vh">
-    <header class="bg-light h-100 col-2 rounded">
-        <nav class="m-4 d-flex flex-column w-100 justify-content-center gap-5">
+    <header class="bg-light h-100 col-2 rounded" style="z-index:2!important;">
+        <nav class="m-4 d-flex flex-column w-100 justify-content-center gap-5" >
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-2  w-75 gap-2">
                     <li class="nav-item border rounded  p-1">
@@ -44,7 +44,7 @@
             </ul>
         </nav>
     </header>
-    <section class="border rounded col-9 p-4 overflow-auto">
+    <section class="border rounded col-9 p-4 overflow-auto" style="z-index:1!important;">
         @RenderBody()
     </section>
 
