@@ -11,22 +11,16 @@
 <body class="m-2 d-flex gap-4 m-0" style="height: 90vh">
     <header class="bg-light h-100 col-2 rounded" style="z-index:2!important;">
         <nav class="m-4 d-flex flex-column w-100 justify-content-center gap-5" >
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-column justify-content-between">
                 <ul class="navbar-nav flex-grow-2  w-75 gap-2">
                     <li class="nav-item border rounded  p-1">
-                        <a class="nav-link text-dark d-flex justify-content-around " asp-area="" asp-controller="Home" asp-action="">
-                            <label>Home</label>
+                        <a class="nav-link d-flex justify-content-around bg-info text-light" asp-area="" asp-controller="Productos" asp-action="Buscar">
+                            <label>Productos</label>
                             <i class="bi bi-house "></i>
                         </a>
                     </li>
                     <li class="nav-item border rounded  p-1">
-                        <a class="nav-link text-dark d-flex justify-content-around " asp-area="" asp-controller="Productos" asp-action="Buscar">
-                            <label>Productos</label>
-                            <i class="bi bi-box-fill"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item border rounded  p-1">
-                        <a class="nav-link text-dark d-flex justify-content-around " asp-area="" asp-controller="Categorias" asp-action="Categorias">
+                        <a class="nav-link  d-flex justify-content-around bg-info text-light " asp-area="" asp-controller="Categorias" asp-action="Categorias">
                             <label>
                                 Categorias
                             </label>
@@ -35,7 +29,14 @@
                     </li>   
                     
                     <li class="nav-item border rounded  p-1">
-                        <a class="nav-link text-dark d-flex justify-content-around " asp-area="" asp-controller="Comunidad" asp-action="Buscar">Comunidades<i class="bi bi-boxes"></i></a>
+                        <a class="nav-link  d-flex justify-content-around   bg-info text-light " asp-area="" asp-controller="Comunidad" asp-action="Buscar">Comunidades<i class="bi bi-boxes"></i></a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav flex-grow-2 m-1  w-75 gap-2">
+                    <li class="nav-item border rounded  p-1">
+                        <a class="nav-link d-flex justify-content-around   bg-info text-light " asp-area="" asp-controller="User" asp-action="Info">Mi Perfil<i class="bi bi-boxes"></i></a>
                     </li>
 
                 </ul>

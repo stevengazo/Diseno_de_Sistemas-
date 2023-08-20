@@ -6,9 +6,9 @@
 
 
 
-
 <div class="container rounded border " style="background-color:lightgrey;">
-    <div class="row">                
+    <div class="row">
+
         <div class="col d-flex justify-content-between m-1 p-3">
             <div class="d-flex">
                 <a class="btn btn-outline-info bg-light m-1" asp-controller="User" asp-action="Info">
@@ -23,48 +23,73 @@
                 <img src="https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" width="50" height="50" class="rounded rounded-circle" />
             </div>
         </div>
-    </div> 
+    </div>
     <div class="row m-1">
         <h1>
-            Cambio de Contraseña
+            Modificar Información
         </h1>
     </div>
+    <!-- Fila con opciones -->
     <div class="row m-1">
         <div class="col">
             <h5>
-                Contraseña Actual
+                Nombre
             </h5>
         </div>
         <div class="col form-group">
-            <input type="text" class="form-control" placeholder="******" />
+            <input type="text" class="form-control" />
         </div>
     </div>
+
+    <!-- Fila con opciones -->
     <div class="row m-1">
         <div class="col">
             <h5>
-                Nueva Contraseña
+                Correo
             </h5>
         </div>
         <div class="col form-group">
-            <input type="text" class="form-control" placeholder="******" />
+            <input type="text" class="form-control" />
         </div>
     </div>
+
+
+    <!-- Fila con opciones -->
     <div class="row m-1">
         <div class="col">
             <h5>
-                Confirmar Contraseña
+                Telefono
             </h5>
         </div>
         <div class="col form-group">
-            <input type="text" class="form-control" placeholder="******" />
+            <input type="number" class="form-control" />
         </div>
     </div>
+
+    <!-- Fila con opciones -->
+    <div class="row m-1">
+        <div class="col">
+            <h5>
+                Distrito
+            </h5>
+        </div>
+        <div class="col form-group">
+            <select class="form-control">
+                <option>San Miguel - Santo Domingo - H </option>
+                <option>Tures - Santo Domingo - H </option>
+                <option>Pará - Santo Domingo - H </option>
+                <option>San Carlos - San Carlos - A </option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Botones -->
     <div class="row m-1">
         <button class="btn btn-success m-1">
-            Agregar 
+            Actualizar Opciones
         </button>
-        <button class="btn btn-info m-1">
-            Limpiar
+        <button class="btn btn-danger m-1">
+            Cancelar
         </button>
     </div>
 </div>

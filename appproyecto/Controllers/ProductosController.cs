@@ -4,6 +4,10 @@ namespace appproyecto.Controllers
 {
     public class ProductosController : Controller
     {
+        public IActionResult Modificar()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

@@ -4,6 +4,10 @@ namespace appproyecto.Controllers
 {
     public class UserController : Controller
     {
+        public IActionResult VerUsuario()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
@@ -16,6 +20,11 @@ namespace appproyecto.Controllers
         public IActionResult CambioContrasena()
         {
             return View();
+        }
+
+        public IActionResult Modificar()
+        {
+            return View();  
         }
 
         public IActionResult UserInfo()
