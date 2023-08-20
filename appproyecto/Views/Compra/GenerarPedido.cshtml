@@ -3,22 +3,49 @@
     Layout = "MaintLayout";
 }
 
-<div class="container">
-	<div class="rectangle-7">
-		<div class="col">Información de Pedidos</div>
+<div class="container border border-2">
+
+
+	<div class="row border border-2 m-1">
+		<div class="col d-flex justify-content-center m-1"><strong>Informaci&oacute;n de Pedido</strong></div>
 	</div>
-	<div class="row">
-		<div class="d-flex align-items-start"><img class="rectangle-8" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" /></div>
-		<div class="col">
+
+
+
+	<div class="row border border-2 m-1">
+
+		<div class="col d-flex align-items-start d-flex justify-content-center m-1">
+			<img class="img-thumbnail rounded float-start" width="200" alt="..." src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" />
+		</div>
+
+		<div class="col align-middle m-1">
 			<p>Nombre: Nombre Producto</p>
 			<p>Precio: $5000</p>
 			<p>Categor&iacute;a: Nombre Categor&iacute;a</p>
 		</div>
+
 	</div>
-	<div class="row">
-		<div class="col">Acciones 3 botones</div>
-		<div class="col">
-			<p>Informaci&oacute;n de Pedido</p>
+
+
+	<div class="row border border-2 align-middle m-1">
+		
+		<div class="col align-middle d-flex justify-content-center m-1">
+			<ul class="navbar-nav flex-grow-2  w-75 gap-2 align-middle">
+				<li class="nav-item border rounded  p-1 d-flex justify-content-center m-1">
+					<button type="button" class="btn btn-danger">Anular</button>
+				</li>
+				<li class="nav-item border rounded  p-1  d-flex justify-content-center m-1">
+					<button type="button" class="btn btn-success">Completar</button>
+				</li>
+				<li class="nav-item border rounded  p-1 d-flex justify-content-center m-1">
+					<button type="button" class="btn btn-light">Generar Factura</button>
+				</li>
+
+			</ul>
+		</div>
+
+
+		<div class="col align-middle m-1">
 
 			<p>Esta persona esta solicitando m&aacute;s informaci&oacute;n de este pedido.&nbsp;Comunicate con ella para m&aacute;s informaci&oacute;n</p>
 
@@ -33,32 +60,7 @@
 			<p>M&eacute;todo de pago: Tarjeta.</p>
 		</div>
 	</div>
+
+
 </div>
 
-
-<style>
-	.rectangle-8 {
-		border-radius: 5px;
-		border-style: solid;
-		border-color: #ababab;
-		border-width: 1px;
-		width: 247px;
-		height: 200px;
-		position: absolute;
-		left: 495px;
-		top: 193px;
-		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-	}
-
-
-	.rectangle-7 {
-		background: #ebeaea;
-		border-radius: 5px;
-		width: 290.66px;
-		height: 275.2px;
-		position: absolute;
-		left: 335.54px;
-		top: 120.24px;
-		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-	}
-</style>
