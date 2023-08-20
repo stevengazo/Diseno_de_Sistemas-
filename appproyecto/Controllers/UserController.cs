@@ -12,5 +12,16 @@ namespace appproyecto.Controllers
         {
             return View();
         }
+
+        public IActionResult CambioContrasena()
+        {
+            return View();
+        }
+
+        public IActionResult UserInfo()
+        {
+            return View();
+        }
+
     }
 }
