@@ -9,6 +9,10 @@ namespace appproyecto.Controllers
             return View();
         }
 
+        public IActionResult Agregar()
+        {
+            return View();
+        }
 
         public IActionResult Buscar()
         {
