@@ -1,0 +1,70 @@
+﻿@{
+	ViewData["Title"] = "Create";
+	Layout = "MaintLayout";
+}
+
+<div class="container border border-2 align-self-center">
+
+
+	<div class="row border border-2 m-1">
+		<div class="col d-flex justify-content-center m-1"><strong>Informaci&oacute;n de Pedido</strong></div>
+	</div>
+
+
+
+	<div class="row border border-2 m-1">
+
+		<div class="col d-flex align-items-start d-flex justify-content-center m-1">
+			<img class="img-thumbnail rounded float-start" width="200" alt="..." src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" />
+		</div>
+
+		<div class="col align-middle align-self-center m-1">
+			<p>Nombre: Nombre Producto</p>
+			<p>Precio: $5000</p>
+			<p>Categor&iacute;a: Nombre Categor&iacute;a</p>
+		</div>
+
+	</div>
+
+
+	<div class="row border border-2 align-middle m-1">
+
+		<div class="col align-middle d-flex justify-content-center align-self-center m-1">
+			<ul class="navbar-nav flex-grow-2  w-75 gap-2 align-middle">
+				<li class="nav-item border rounded  p-1 d-flex justify-content-center m-1">
+					<a type="button" class="btn btn-danger" asp-controller="Productos" asp-action="VerProducto">Anular</a>
+				</li>
+				<!--<li class="nav-item border rounded  p-1  d-flex justify-content-center m-1">
+					<button type="button" class="btn btn-success">Completar</button>
+				</li>-->
+				<li class="nav-item border rounded  p-1 d-flex justify-content-center m-1">
+					<a type="button" class="btn btn-light" asp-controller="Compra" asp-action="GenerarFactura">Completar Compra</a>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="col align-middle m-1">
+
+			<div class="mb-3">
+				<label for="exampleFormControlTextarea1" class="form-label">Dirección:</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			</div>
+
+			<div class="mb-3">
+				<label for="exampleFormControlTextarea1" class="form-label">Cantidad:</label>
+				<input type="number" min=0 max=20 class="form-control" id="NumberInput">
+			</div>
+
+			<select class="form-select" aria-label="Default select example">
+				<option selected>M&eacute;todo de pago: </option>
+				<option value="1">Efectivo</option>
+				<option value="2">Sinpe Móvil</option>
+			</select>
+
+		</div>
+	</div>
+
+
+</div>
+
