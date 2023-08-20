@@ -1,0 +1,349 @@
+﻿@{
+    ViewData["Title"] = "Create";
+    Layout = "MaintLayout";
+}
+
+
+<div class="form">
+    <div class="nombre-usuario">Nombre Usuario</div>
+    <div class="input-text">
+        <div class="rectangle-40"></div>
+        <div class="texto">Texto</div>
+    </div>
+    <div class="input-text">
+        <div class="rectangle-402"></div>
+        <div class="texto2">Texto</div>
+    </div>
+    <div class="input-text">
+        <div class="rectangle-403"></div>
+        <div class="ejemplo-ejemplo-com">ejemplo@ejemplo.com</div>
+    </div>
+    <div class="input-text">
+        <div class="rectangle-404"></div>
+        <div class="xxxxxxxxx">XXXXXXXXX</div>
+    </div>
+    <div class="contrase-a">Contraseña</div>
+    <div class="correo">Correo</div>
+    <div class="c-dula">Cédula</div>
+    <div class="comunidad">Comunidad</div>
+    <div class="input-text">
+        <div class="rectangle-405"></div>
+        <div class="">******</div>
+    </div>
+    <div class="button">
+        <div class="rectangle-41"></div>
+        <a asp-controller="Productos" asp-action="Buscar" class="registrar">Registrar</a>
+    </div>
+    <div class="button2">
+        <div class="rectangle-412"></div>
+        <a class="atr-s" asp-controller="Login" asp-action="Login">Atrás</a>
+    </div>
+    <div 
+         style="z-index:-1!important;" class="rectangle-42"></div>
+</div>
+
+
+    <style>
+
+
+    .form,
+    .form * {
+        box-sizing: border-box;
+    }
+
+    .form {
+        position: absolute;
+        inset: 0;
+    }
+
+    .nombre-usuario {
+        color: #000000;
+        text-align: center;
+        font: 400 20px "Inter", sans-serif;
+        position: absolute;
+        left: 428.07px;
+        top: 85px;
+        width: 381.09px;
+        height: 41.97px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-text {
+        width: 322.08px;
+        height: 36.05px;
+        position: static;
+    }
+
+    .rectangle-40 {
+        background: #ffffff;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-width: 1px;
+        width: 322.08px;
+        height: 36.05px;
+        position: absolute;
+        left: 457.94px;
+        top: 127.21px;
+    }
+
+    .texto {
+        color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font: 400 16px "Inter", sans-serif;
+        position: absolute;
+        left: 497.28px;
+        top: 136.4px;
+        width: 225.37px;
+        height: 16.26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rectangle-402 {
+        background: #ffffff;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-width: 1px;
+        width: 322.08px;
+        height: 36.05px;
+        position: absolute;
+        left: 457.94px;
+        top: 410.23px;
+    }
+
+    .texto2 {
+        color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font: 400 16px "Inter", sans-serif;
+        position: absolute;
+        left: 497.28px;
+        top: 419.42px;
+        width: 225.37px;
+        height: 16.26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rectangle-403 {
+        background: #ffffff;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-width: 1px;
+        width: 322.08px;
+        height: 36.05px;
+        position: absolute;
+        left: 457.94px;
+        top: 270.45px;
+    }
+
+    .ejemplo-ejemplo-com {
+        color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font: 400 16px "Inter", sans-serif;
+        position: absolute;
+        left: 497.28px;
+        top: 279.64px;
+        width: 225.37px;
+        height: 16.26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rectangle-404 {
+        background: #ffffff;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-width: 1px;
+        width: 322.08px;
+        height: 36.05px;
+        position: absolute;
+        left: 457.94px;
+        top: 342.42px;
+    }
+
+    .xxxxxxxxx {
+        color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font: 400 16px "Inter", sans-serif;
+        position: absolute;
+        left: 497.28px;
+        top: 351.6px;
+        width: 225.37px;
+        height: 16.26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contrase-a {
+        color: #000000;
+        text-align: center;
+        font: 400 20px "Inter", sans-serif;
+        position: absolute;
+        left: 529.79px;
+        top: 164.58px;
+        width: 177.02px;
+        height: 32.4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .correo {
+        color: #000000;
+        text-align: center;
+        font: 400 20px "Inter", sans-serif;
+        position: absolute;
+        left: 529.79px;
+        top: 226.86px;
+        width: 177.02px;
+        height: 41.97px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .c-dula {
+        color: #000000;
+        text-align: center;
+        font: 400 20px "Inter", sans-serif;
+        position: absolute;
+        left: 529.79px;
+        top: 305.74px;
+        width: 177.02px;
+        height: 41.97px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comunidad {
+        color: #000000;
+        text-align: center;
+        font: 400 20px "Inter", sans-serif;
+        position: absolute;
+        left: 529.79px;
+        top: 368.02px;
+        width: 177.02px;
+        height: 41.97px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rectangle-405 {
+        background: #ffffff;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-width: 1px;
+        width: 322.08px;
+        height: 36.05px;
+        position: absolute;
+        left: 457.94px;
+        top: 201.25px;
+    }
+
+    . {
+        color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font: 400 16px "Inter", sans-serif;
+        position: absolute;
+        left: 497.28px;
+        top: 210.44px;
+        width: 225.37px;
+        height: 16.26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .button {
+            width: 217.02px;
+            height: 38.17px;
+            position: static;
+        }
+
+        .rectangle-41 {
+            background: #ffffff;
+            border-radius: 15px;
+            border-style: solid;
+            border-color: #3a86ff;
+            border-width: 1px;
+            width: 206.52px;
+            height: 38.17px;
+            position: absolute;
+            left: 518.49px;
+            top: 462.13px;
+        }
+
+        .registrar {
+            color: #3a86ff;
+            text-align: center;
+            font: 400 24px "Inter", sans-serif;
+            position: absolute;
+            left: 528.98px;
+            top: 462.13px;
+            width: 206.52px;
+            height: 38.17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button2 {
+            width: 88.66px;
+            height: 27.1px;
+            position: static;
+        }
+
+        .rectangle-412 {
+            background: #ffffff;
+            border-radius: 15px;
+            border-style: solid;
+            border-color: #d71010;
+            border-width: 1px;
+            width: 88.66px;
+            height: 27.1px;
+            position: absolute;
+            left: 383.67px;
+            top: 530.63px;
+        }
+
+        .atr-s {
+            color: #ff3a3a;
+            text-align: center;
+            font: 400 24px "Inter", sans-serif;
+            position: absolute;
+            left: 383.67px;
+            top: 530.63px;
+            width: 88.66px;
+            height: 27.1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rectangle-42 {
+            border-radius: 15px;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.5);
+            border-width: 1px;
+            width: 490.09px;
+            height: 483px;
+            position: absolute;
+            left: 373.91px;
+            top: 85px;
+        }
+
+
+    </style>
