@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Buscar Comunidad";
+    Layout = "MaintLayout";
+}
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>
+                Buscar Comunidad
+            </h1>
+        </div>
+        <div class="col d-flex form-group">
+            <input type="text" class="form-control" />
+            <button class="btn btn-info"> Buscar </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h5>
+                Resultados de Busqueda
+            </h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col d-flex flex-row flex-wrap">
+
+            <div class="card m-1" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Comunidad</h5>
+                    <a class="btn btn-primary"  asp-controller="Comunidad" asp-action="Ver" >Ver Comunidad</a>
+                </div>
+            </div>
+
+            <div class="card m-1" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Comunidad</h5>
+                    <a class="btn btn-primary" asp-controller="Comunidad" asp-action="Ver">Ver Comunidad</a>
+                </div>
+            </div>
+
+            <div class="card m-1" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Comunidad</h5>
+                    <a class="btn btn-primary" asp-controller="Comunidad" asp-action="Ver">Ver Comunidad</a>
+                </div>
+            </div>
+            <div class="card m-1" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Comunidad</h5>
+                    <a class="btn btn-primary" asp-controller="Comunidad" asp-action="Ver">Ver Comunidad</a>
+                </div>
+            </div>
+
+
+   
+        </div>
+    </div>
+</div>
