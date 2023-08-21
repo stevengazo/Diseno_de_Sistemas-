@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Modificar";
+    ViewData["Title"] = "Productos";
     Layout = "MaintLayout";
 }
 
@@ -33,7 +33,7 @@
                             Vendedor
                         </th>
                         <td>
-                            <a asp-controller="User" asp-action="VerUsuario"> Susan Rojas </a>
+                            <a asp-controller="User" asp-action="VerUsuario" class="text-decoration-none text-info"> Susan Rojas </a>
                         </td>
                     </tr>
                     <tr>
@@ -55,7 +55,7 @@
                 </tbody>
             </table>
             <div class="d-flex justify-content-center m-1 align-items-center">
-                <a class="btn btn-outline-info m-2">
+                <a class="btn btn-outline-info m-2" asp-controller="Compra" asp-action="GenerarCompra">
                     Comprar
                 </a>
             </div>

@@ -3,7 +3,7 @@
     Layout = "MaintLayout";
 }
 
-<div class="container rounded border " style="background-color:lightgrey;">
+<div class="container rounded border " >
     <div class="row">
         <div class="col d-flex justify-content-end">
             <a class="btn btn-outline-info m-2 bg-light" asp-controller="User" asp-action="CambioContrasena">Contraseña</a>
@@ -84,22 +84,37 @@
         </div>
     </div>
     <div class="row">
-        <div class="col d-flex flex-row  justify-content-around ">
-            <div class="card m-1 " style="width: 18rem;">
+        <h6>
+            Comunidades
+        </h6>
+    </div>
+    <div class="row ">
+        <div class="col d-flex flex-row  justify-content-around ">                       
+            <!-- Tarjeta -->
+            <a asp-controller="Productos" asp-action=" ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
                 <div class="card-body">
-                    <h5 class="card-title">Comunidad</h5>
+                    <h5 class="card-title">[Comunidad]</h5>
                 </div>
-            </div>
-            <div class="card m-1 " style="width: 18rem;">
+            </a> 
+            <!-- Tarjeta -->
+            <a asp-controller="Productos" asp-action=" ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
                 <div class="card-body">
-                    <h5 class="card-title">Comunidad</h5>
+                    <h5 class="card-title">[Comunidad]</h5>
                 </div>
-            </div>
-            <div class="card m-1 " style="width: 18rem;">
+            </a> 
+            <!-- Tarjeta -->
+            <a asp-controller="Productos" asp-action=" ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
                 <div class="card-body">
-                    <h5 class="card-title">Comunidad</h5>
+                    <h5 class="card-title">[Comunidad]</h5>
                 </div>
-            </div>
+            </a> 
+            <!-- Tarjeta -->
+            <a asp-controller="Productos" asp-action=" ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
+                <div class="card-body">
+                    <h5 class="card-title">[Comunidad]</h5>
+                </div>
+            </a>
+
         </div>
     </div>
     <div class="row">
