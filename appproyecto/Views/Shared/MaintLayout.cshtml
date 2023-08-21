@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="~/appproyecto.styles.css" asp-append-version="true" />
 </head>
 <body class="m-2 d-flex gap-4 m-0 " style="height: 90vh">
-    <header class="bg-light h-100 col-2 rounded" style="z-index:2!important;">
-        <nav class="m-4 d-flex flex-column w-100 justify-content-center gap-5" >
-            <div class="navbar-collapse collapse d-sm-inline-flex flex-column justify-content-between">
-                <ul class="navbar-nav flex-grow-2  w-75 gap-2">
-                    <li class="nav-item border rounded  p-1">
-                        <a class="nav-link d-flex justify-content-around bg-info text-light" asp-area="" asp-controller="Productos" asp-action="Buscar">
+    <header class=" border border-info rounded border-2 h-100 col-2 rounded" style="z-index:2!important;">
+        <nav class=" d-flex flex-column w-100  justify-content-between gap-5" >
+            <div class="navbar-collapse collapse mt-3 d-sm-inline-flex flex-column ">
+                <ul class="navbar-nav flex-grow-2 border-info w-75 gap-2">
+                    <li class="nav-item border rounded bg-info  p-1">
+                        <a class="nav-link d-flex justify-content-around  text-light" asp-area="" asp-controller="Productos" asp-action="Buscar">
                             <label>Productos</label>
                             <i class="bi bi-house "></i>
                         </a>
                     </li>
-                    <li class="nav-item border rounded  p-1">
-                        <a class="nav-link  d-flex justify-content-around bg-info text-light " asp-area="" asp-controller="Categorias" asp-action="Categorias">
+                    <li class="nav-item border rounded  bg-info p-1">
+                        <a class="nav-link  d-flex justify-content-around  text-light " asp-area="" asp-controller="Categorias" asp-action="Categorias">
                             <label>
                                 Categorias
                             </label>
@@ -28,24 +28,22 @@
                         </a>
                     </li>   
                     
-                    <li class="nav-item border rounded  p-1">
-                        <a class="nav-link  d-flex justify-content-around   bg-info text-light " asp-area="" asp-controller="Comunidad" asp-action="Buscar">Comunidades<i class="bi bi-boxes"></i></a>
+                    <li class="nav-item border rounded    bg-info p-1">
+                        <a class="nav-link  d-flex justify-content-around  text-light " asp-area="" asp-controller="Comunidad" asp-action="Buscar">Comunidades<i class="bi bi-boxes"></i></a>
                     </li>
 
                 </ul>
-
                 <ul class="navbar-nav flex-grow-2 m-1  w-75 gap-2">
-                    <li class="nav-item border rounded  p-1">
-                        <a class="nav-link d-flex justify-content-around   bg-info text-light " asp-area="" asp-controller="User" asp-action="Info">Mi Perfil<i class="bi bi-boxes"></i></a>
+                    <li class="nav-item border rounded  bg-info p-1">
+                        <a class="nav-link d-flex justify-content-around    text-light " asp-area="" asp-controller="User" asp-action="Info">Mi Perfil<i class="bi bi-boxes"></i></a>
                     </li>
-
                 </ul>
             </div>
 
             </ul>
         </nav>
     </header>
-    <section class="border rounded col-9 p-4  overflow-auto  " style="z-index:1!important;">
+    <section class="border rounded col-9 p-4 border-info border-2  overflow-auto  " style="z-index:1!important;">
         @RenderBody()
     </section>
 

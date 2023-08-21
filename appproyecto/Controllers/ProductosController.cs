@@ -12,6 +12,7 @@ namespace appproyecto.Controllers
         {
             return View();
         }
+        
 
         public IActionResult ProductosPorCategoria()
         {

@@ -3,12 +3,18 @@
     Layout = "MaintLayout";
 }
 
-<div class="container rounded border" >
+<div class="container rounded border">
     <div class="row">
-        <div class="col d-flex justify-content-end">
-            <a class="btn btn-outline-info m-2 bg-light" asp-controller="User" asp-action="CambioContrasena">Contraseña</a>
-            <a class="btn btn-outline-info bg-light m-1">Usuario</a>
-            <img src="https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" width="50" height="50" class="rounded rounded-circle" />
+        <div class="col d-flex justify-content-between">
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-outline-danger m-2 bg-light" asp-controller="Login" asp-action="Login">Cerrar Sesión</a>
+            </div>
+            <div class="d-flex justify-content-end">
+                <a class="btn btn-outline-info m-2 bg-light" asp-controller="User" asp-action="CambioContrasena">Contraseña</a>
+                <label class="m-1">[Nombre]</label>
+                <img src="https://static.vecteezy.com/system/resources/previews/008/442/086/original/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" width="50" height="50" class="rounded rounded-circle" />
+            </div>
+
         </div>
     </div>
     <div class="row">
@@ -22,42 +28,53 @@
         </div>
     </div>
     <div class="row">
-        
-        
+
         <div class="col d-flex justify-content-start flex-wrap">
             <!-- Cards -->
             <div class="card m-1" style="width: 12rem;">
                 <img class="card-img-top" src="https://catalogo.jpicadoyasociados.com/catalogoEnLinea/public/showImagenPrincipalArticulo/80?cu=9f08b882-fcdf-4fc4-89ab-b3376a95df03&tam=g" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Queques de Cumpleaños</h5>
-                    <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver Productos</a>
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn m-1 btn-primary">Ver Productos</a>
+                        <a asp-controller="Productos" asp-action="Modificar" class="btn m-1 btn-success">Modificar</a>
+                    </div>
                 </div>
             </div>
-  
-           <!-- Cards -->
+
+            <!-- Cards -->
             <div class="card m-1" style="width: 12rem;">
                 <img class="card-img-top" src="https://www.bettycrocker.lat/wp-content/uploads/2020/12/BClatam-recipe-galletas-arcoirirs.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Galletas con chispas de chocolate</h5>
-                    <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver Productos</a>
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn m-1 btn-primary">Ver Productos</a>
+                        <a asp-controller="Productos" asp-action="Modificar" class="btn m-1 btn-success">Modificar</a>
+                    </div>
                 </div>
             </div>
-  
-           <!-- Cards -->
+
+            <!-- Cards -->
             <div class="card m-1" style="width: 12rem;">
                 <img class="card-img-top" src="https://i.pinimg.com/1200x/4f/ce/80/4fce803c029cdc8a4f0f6b95b8c262db.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Muffins de Cumpleaños</h5>
-                    <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver Productos</a>
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn m-1 btn-primary">Ver Productos</a>
+                        <a asp-controller="Productos" asp-action="Modificar" class="btn m-1 btn-success">Modificar</a>
+                    </div>
                 </div>
             </div>
-  
-           <!-- Cards -->
+
+            <!-- Cards -->
             <div class="card m-1" style="width: 12rem;">
                 <img class="card-img-top" src="https://img.freepik.com/vector-gratis/pack-cuatro-tarjetas-feliz-cumpleanos-estilo-retro_23-2147603475.jpg?w=2000" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Tarjetas de Cumpleaños</h5>
-                    <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver Productos</a>
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn m-1 btn-primary">Ver Productos</a>
+                        <a asp-controller="Productos" asp-action="Modificar" class="btn m-1 btn-success">Modificar</a>
+                    </div>
                 </div>
             </div>
 
@@ -66,14 +83,13 @@
                 <img class="card-img-top" src="https://s1.significados.com/foto/abundance-1868573-960-720_bg.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Repostería</h5>
-                    <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver Productos</a>
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn m-1 btn-primary">Ver Productos</a>
+                        <a asp-controller="Productos" asp-action="Modificar" class="btn m-1 btn-success">Modificar</a>
+                    </div>
                 </div>
             </div>
-
         </div>
-
-     
-        
 
     </div>
     <div class="row  m-1">
@@ -84,37 +100,42 @@
         </div>
     </div>
     <div class="row">
-        <h6>
-            Comunidades
-        </h6>
+        <p>
+            Aqui aparecen tus comunidades suscritas
+        </p>
     </div>
     <div class="row ">
-        <div class="col d-flex flex-row  justify-content-around ">                       
+        <div class="col d-flex flex-row  justify-content-around ">
             <!-- Tarjeta -->
-            <a asp-controller="Productos" asp-action=" ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
+            <a asp-controller="Productos" asp-action="ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
                 <div class="card-body">
-                    <h5 class="card-title">[Comunidad]</h5>
-                </div>
-            </a> 
-            <!-- Tarjeta -->
-            <a asp-controller="Productos" asp-action=" ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
-                <div class="card-body">
-                    <h5 class="card-title">[Comunidad]</h5>
-                </div>
-            </a> 
-            <!-- Tarjeta -->
-            <a asp-controller="Productos" asp-action=" ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
-                <div class="card-body">
-                    <h5 class="card-title">[Comunidad]</h5>
-                </div>
-            </a> 
-            <!-- Tarjeta -->
-            <a asp-controller="Productos" asp-action=" ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
-                <div class="card-body">
-                    <h5 class="card-title">[Comunidad]</h5>
+                    <h5 class="card-title text-decoration-none text-light text-md-center ">[Comunidad]</h5>
                 </div>
             </a>
-
+            <!-- Tarjeta -->
+            <a asp-controller="Productos" asp-action="ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
+                <div class="card-body">
+                    <h5 class="card-title text-decoration-none text-light text-md-center ">[Comunidad]</h5>
+                </div>
+            </a>
+            <!-- Tarjeta -->
+            <a asp-controller="Productos" asp-action="ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
+                <div class="card-body">
+                    <h5 class="card-title text-decoration-none text-light text-md-center ">[Comunidad]</h5>
+                </div>
+            </a>
+            <!-- Tarjeta -->
+            <a asp-controller="Productos" asp-action="ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
+                <div class="card-body">
+                    <h5 class="card-title text-decoration-none text-light text-md-center ">[Comunidad]</h5>
+                </div>
+            </a>
+            <!-- Tarjeta -->
+            <a asp-controller="Productos" asp-action="ProductosPorCategoria" class="card m-1 " style="width: 18rem; background-color:mediumpurple;">
+                <div class="card-body">
+                    <h5 class="card-title text-decoration-none text-light text-md-center ">[Comunidad]</h5>
+                </div>
+            </a>
         </div>
     </div>
     <div class="row">
@@ -122,7 +143,7 @@
             <h2>
                 Información Basica Usuario
             </h2>
-            <a class="btn btn-outline-info" asp-controller="User" asp-action="Modificar">
+            <a class="btn btn-outline-info h-50" asp-controller="User" asp-action="Modificar">
                 Modificar
             </a>
         </div>
@@ -141,7 +162,7 @@
                             Nombre de Usuario
                         </th>
                         <td>
-                            Información
+                            [Información]
                         </td>
                     </tr>
                     <tr>
@@ -149,7 +170,7 @@
                             Correo
                         </th>
                         <td>
-                            Información
+                            [Información]
                         </td>
                     </tr>
                     <tr>
@@ -157,7 +178,7 @@
                             Ubicación
                         </th>
                         <td>
-                            Información
+                            [Información]
                         </td>
                     </tr>
                     <tr>
@@ -165,7 +186,7 @@
                             Numero Telefono
                         </th>
                         <td>
-                            Información
+                            [Información]
                         </td>
                     </tr>
                 </tbody>
@@ -174,9 +195,9 @@
         <div class="col">
             <div class="d-flex flex-column">
                 <div class="card m-1 " style="width: 18rem; height:4rem;">
-                    <div class="card-body">
+                    <a class="card-body" asp>
                         <h5 class="card-title">Pedido 1</h5>
-                    </div>
+                    </a>
                 </div>
                 <div class="card m-1 " style="width: 18rem; height:4rem;">
                     <div class="card-body">
