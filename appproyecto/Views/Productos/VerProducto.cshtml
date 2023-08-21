@@ -10,43 +10,69 @@
         <div class="col">
             <h1>
                 Información de Producto
-</h1>
-            
+            </h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row border rounded m-1">
         <div class="col d-flex justify-content-center align-items-center">
-            <img class="img-fluid rounded  "  width="200" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" />
+            <img class="img-fluid rounded  " width="200" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" />
         </div>
-        <div class="col">
-            <table class="table table-light">
+        <div class="col d-flex flex-column justify-content-center align-items-center ">
+            <table class="table m-1 table-light">
                 <tbody>
                     <tr>
                         <th>
-                            Información
+                            Nombre
                         </th>
                         <td>
-                            DAta
+                            Mesedora
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            Información
+                            Vendedor
                         </th>
                         <td>
-                            DAta
+                            <a asp-controller="User" asp-action="VerUsuario"> Susan Rojas </a>
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            Información
+                            Precio
                         </th>
                         <td>
-                            DAta
+                            $ 1000
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Categoria
+                        </th>
+                        <td>
+                            Artesanias
                         </td>
                     </tr>
                 </tbody>
             </table>
+            <div class="d-flex justify-content-center m-1 align-items-center">
+                <a class="btn btn-outline-info m-2">
+                    Comprar
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row border rounded m-1">
+        <div class="col">
+            <div class="m-1">
+                <h3>
+                    Descripción
+                </h3>
+            </div>
+            <div>
+                <p>
+                    Mesedora bonita hecha a mano.
+                </p>
+            </div>
         </div>
     </div>
 </div>

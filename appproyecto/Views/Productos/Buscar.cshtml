@@ -4,572 +4,104 @@
 }
 
 
-<div class="group-58 relative">
-    <div class="body"></div>
-    <div class="group-16">
-        <div class="input-busqueda">
-            <div class="rectangle-5"></div>
-            <div class="buscar-producto">Buscar Producto</div>
-        </div>
-    </div>
-    <div class="group-57">
-        <div class="productos">Productos</div>
-        <div class="card-item">
-            <div class="rectangle-7"></div>
-            <img class="rectangle-6" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" />
-            <div class="silla">Silla</div>
-            <div class="btn-ver-producto">
-                <div class="rectangle-8"></div>
-                <a asp-controller="Productos" asp-action="VerProducto" class="ver-producto">Ver Producto</a>
-            </div>
-        </div>
-        <div class="card-item2">
-            <div class="rectangle-72"></div>
-            <img class="rectangle-62" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxMfaZOdIYD9QuLIMay4aEhNnsNB4Jb_Guo4xo5A0CqJesKRJ1415Ue-B9G5y2esfmfI&usqp=CAU" />
-            <div class="silla2">Mesa de sala</div>
-            <div class="btn-ver-producto">
-                <div class="rectangle-82"></div>
-                <a asp-controller="Productos" asp-action="VerProducto" class="ver-producto2">Ver Producto</a>
-            </div>
-            <div class="card-item2">
-                <div class="rectangle-73"></div>
-                <img class="rectangle-63" src="https://www.naturalcastello.com/wp-content/uploads/2019/08/propiedades-hortalizas.jpg" />
-                <div class="silla3">Pack de Hortalizas</div>
-                <div class="btn-ver-producto">
-                    <div class="rectangle-83"></div>
-                    <a asp-controller="Productos" asp-action="VerProducto"  class="ver-producto3">Ver Producto</a>
+
+<div class="container">
+    <div class="row">
+        <div class="col d-flex flex-row justify-content-between">
+            <h1>
+                Productos
+            </h1>
+            <div>
+                <div class="d-flex flex-row justify-content-between">
+                    <input placeholder="Buscar Producto" class="form-control w-100" />
+                    <button class="btn btn-outline-info">Buscar </button>
                 </div>
-                <div class="card-item3">
-                    <div class="rectangle-74"></div>
-                    <img class="rectangle-64" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Canastas_de_Santa_Apolonia_Teacalco.jpg" />
-                    <div class="silla4">Canastas</div>
-                    <div class="btn-ver-producto">
-                        <div class="rectangle-84"></div>
-                        <a asp-controller="Productos" asp-action="VerProducto" class="ver-producto4">Ver Producto</a>
-                    </div>
-                    <div class="card-item4">
-                        <div class="rectangle-75"></div>
-                        <img class="rectangle-65" src="https://www.titicupon.com/sites/default/files/imagecache/coupon-slider-responsive/mundartduoajust1.jpg" />
-                        <div class="silla5">Pulseras</div>
-                        <div class="btn-ver-producto">
-                            <div class="rectangle-85"></div>
-                            <a asp-controller="Productos" asp-action="VerProducto" class="ver-producto5">Ver Producto</a>
-                        </div>
-                        <div class="card-item">
-                            <div class="rectangle-76"></div>
-                            <img class="rectangle-66" src="https://catalogo.jpicadoyasociados.com/catalogoEnLinea/public/showImagenPrincipalArticulo/80?cu=9f08b882-fcdf-4fc4-89ab-b3376a95df03&tam=g" />
-                            <div class="silla6">Queques de cumpleaños</div>
-                            <div class="btn-ver-producto">
-                                <div class="rectangle-86"></div>
-                                <a asp-controller="Productos" asp-action="VerProducto" class="ver-producto6">Ver Producto</a>
-                            </div>
-                        </div>
+
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col">
+                <h4>
+                    Resultados
+                </h4>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex flex-row flex-wrap overflow-auto">
+
+                <div class="card m-1" style="width: 15rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesedora</h5>
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver</a>
                     </div>
                 </div>
+                <div class="card m-1" style="width: 15rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesedora</h5>
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+                <div class="card m-1" style="width: 15rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesedora</h5>
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+                <div class="card m-1" style="width: 15rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesedora</h5>
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+                <div class="card m-1" style="width: 15rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesedora</h5>
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+                <div class="card m-1" style="width: 15rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesedora</h5>
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+                <div class="card m-1" style="width: 15rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesedora</h5>
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+                <div class="card m-1" style="width: 15rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesedora</h5>
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+                <div class="card m-1" style="width: 15rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesedora</h5>
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+                <div class="card m-1" style="width: 15rem;">
+                    <img class="card-img-top" src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mesedora</h5>
+                        <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-</div>
-
-
-
-<style>
-    .productos-search-mac-book-pro-14-1,
-    .productos-search-mac-book-pro-14-1 * {
-        box-sizing: border-box;
-    }
-
-    .productos-search-mac-book-pro-14-1 {
-        background: #ffffff;
-        width: 1512px;
-        height: 982px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .group-58 {
-        position: absolute;
-        inset: 0;
-    }
-
-    .body {
-        background: #d9d9d9;
-        border-radius: 25px;
-        width: 697px;
-        height: 944px;
-        position: absolute;
-        left: 326px;
-        top: 730px;
-        transform-origin: 0 0;
-        transform: rotate(-90deg) scale(1, 1);
-    }
-
-    .group-16 {
-        width: 452px;
-        height: 49px;
-        position: static;
-    }
-
-    .input-busqueda {
-        width: 452px;
-        height: 49px;
-        position: static;
-    }
-
-    .rectangle-5 {
-        background: #ffffff;
-        border-radius: 5px;
-        border-style: solid;
-        border-color: #dcdcdc;
-        border-width: 1px;
-        width: 452px;
-        height: 49px;
-        position: absolute;
-        left: 792px;
-        top: 48px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .buscar-producto {
-        color: #b9b9b9;
-        text-align: left;
-        font: 200 24px "Inter", sans-serif;
-        position: absolute;
-        left: 811px;
-        top: 60px;
-        width: 246px;
-        height: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .group-57 {
-        width: 908.43px;
-        height: 646.03px;
-        position: static;
-    }
-
-    .productos {
-        color: #000000;
-        text-align: left;
-        font: 400 46px "Inter", sans-serif;
-        position: absolute;
-        left: 347px;
-        top: 48px;
-        width: 414px;
-        height: 46px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .card-item {
-        width: 290.66px;
-        height: 275.2px;
-        position: static;
-    }
-
-    .rectangle-7 {
-        background: #ebeaea;
-        border-radius: 5px;
-        width: 290.66px;
-        height: 275.2px;
-        position: absolute;
-        left: 335.54px;
-        top: 120.24px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .rectangle-6 {
-        border-radius: 5px;
-        border-style: solid;
-        border-color: #ababab;
-        border-width: 1px;
-        width: 290.66px;
-        height: 210.45px;
-        position: absolute;
-        left: 335.54px;
-        top: 120.24px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .silla {
-        color: #000000;
-        text-align: left;
-        font: 400 24px "Inter", sans-serif;
-        position: absolute;
-        left: 352.03px;
-        top: 346.87px;
-        width: 146.63px;
-        height: 28.78px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .btn-ver-producto {
-        width: 116.26px;
-        height: 32.38px;
-        position: static;
-    }
-
-    .rectangle-8 {
-        background: #3a86ff;
-        border-radius: 10px;
-        width: 116.26px;
-        height: 32.38px;
-        position: absolute;
-        left: 498.66px;
-        top: 346.87px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .ver-producto {
-        color: #ffffff;
-        text-align: left;
-        font: 400 18px "Inter", sans-serif;
-        position: absolute;
-        left: 508.21px;
-        top: 352.27px;
-        width: 97.18px;
-        height: 20.69px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .card-item2 {
-        width: 908.43px;
-        height: 573.79px;
-        position: static;
-    }
-
-    .rectangle-72 {
-        background: #ebeaea;
-        border-radius: 5px;
-        width: 290.66px;
-        height: 275.2px;
-        position: absolute;
-        left: 643.56px;
-        top: 120.24px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .rectangle-62 {
-        border-radius: 5px;
-        border-style: solid;
-        border-color: #ababab;
-        border-width: 1px;
-        width: 290.66px;
-        height: 210.45px;
-        position: absolute;
-        left: 643.56px;
-        top: 120.24px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .silla2 {
-        color: #000000;
-        text-align: left;
-        font: 400 24px "Inter", sans-serif;
-        position: absolute;
-        left: 660.04px;
-        top: 346.87px;
-        width: 146.63px;
-        height: 28.78px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .rectangle-82 {
-        background: #3a86ff;
-        border-radius: 10px;
-        width: 116.26px;
-        height: 32.38px;
-        position: absolute;
-        left: 806.68px;
-        top: 346.87px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .ver-producto2 {
-        color: #ffffff;
-        text-align: left;
-        font: 400 18px "Inter", sans-serif;
-        position: absolute;
-        left: 816.22px;
-        top: 352.27px;
-        width: 97.18px;
-        height: 20.69px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .rectangle-73 {
-        background: #ebeaea;
-        border-radius: 5px;
-        width: 290.66px;
-        height: 275.2px;
-        position: absolute;
-        left: 953.31px;
-        top: 120.24px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .rectangle-63 {
-        border-radius: 5px;
-        border-style: solid;
-        border-color: #ababab;
-        border-width: 1px;
-        width: 290.66px;
-        height: 210.45px;
-        position: absolute;
-        left: 953.31px;
-        top: 120.24px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .silla3 {
-        color: #000000;
-        text-align: left;
-        font: 400 24px "Inter", sans-serif;
-        position: absolute;
-        left: 969.79px;
-        top: 346.87px;
-        width: 146.63px;
-        height: 28.78px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .rectangle-83 {
-        background: #3a86ff;
-        border-radius: 10px;
-        width: 116.26px;
-        height: 32.38px;
-        position: absolute;
-        left: 1116.43px;
-        top: 346.87px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .ver-producto3 {
-        color: #ffffff;
-        text-align: left;
-        font: 400 18px "Inter", sans-serif;
-        position: absolute;
-        left: 1125.97px;
-        top: 352.27px;
-        width: 97.18px;
-        height: 20.69px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .card-item3 {
-        width: 908.43px;
-        height: 277.9px;
-        position: static;
-    }
-
-    .rectangle-74 {
-        background: #ebeaea;
-        border-radius: 5px;
-        width: 290.66px;
-        height: 275.2px;
-        position: absolute;
-        left: 335.54px;
-        top: 418.82px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .rectangle-64 {
-        border-radius: 5px;
-        border-style: solid;
-        border-color: #ababab;
-        border-width: 1px;
-        width: 290.66px;
-        height: 210.45px;
-        position: absolute;
-        left: 335.54px;
-        top: 418.82px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .silla4 {
-        color: #000000;
-        text-align: left;
-        font: 400 24px "Inter", sans-serif;
-        position: absolute;
-        left: 352.03px;
-        top: 645.46px;
-        width: 146.63px;
-        height: 28.78px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .rectangle-84 {
-        background: #3a86ff;
-        border-radius: 10px;
-        width: 116.26px;
-        height: 32.38px;
-        position: absolute;
-        left: 498.66px;
-        top: 645.46px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .ver-producto4 {
-        color: #ffffff;
-        text-align: left;
-        font: 400 18px "Inter", sans-serif;
-        position: absolute;
-        left: 508.21px;
-        top: 650.86px;
-        width: 97.18px;
-        height: 20.69px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .card-item4 {
-        width: 603.88px;
-        height: 275.2px;
-        position: static;
-    }
-
-    .rectangle-75 {
-        background: #ebeaea;
-        border-radius: 5px;
-        width: 290.66px;
-        height: 275.2px;
-        position: absolute;
-        left: 640.09px;
-        top: 416.13px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .rectangle-65 {
-        border-radius: 5px;
-        border-style: solid;
-        border-color: #ababab;
-        border-width: 1px;
-        width: 290.66px;
-        height: 210.45px;
-        position: absolute;
-        left: 640.09px;
-        top: 416.13px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .silla5 {
-        color: #000000;
-        text-align: left;
-        font: 400 24px "Inter", sans-serif;
-        position: absolute;
-        left: 656.57px;
-        top: 642.76px;
-        width: 146.63px;
-        height: 28.78px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .rectangle-85 {
-        background: #3a86ff;
-        border-radius: 10px;
-        width: 116.26px;
-        height: 32.38px;
-        position: absolute;
-        left: 803.21px;
-        top: 642.76px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .ver-producto5 {
-        color: #ffffff;
-        text-align: left;
-        font: 400 18px "Inter", sans-serif;
-        position: absolute;
-        left: 812.75px;
-        top: 648.16px;
-        width: 97.18px;
-        height: 20.69px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .rectangle-76 {
-        background: #ebeaea;
-        border-radius: 5px;
-        width: 290.66px;
-        height: 275.2px;
-        position: absolute;
-        left: 953.31px;
-        top: 416.13px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .rectangle-66 {
-        border-radius: 5px;
-        border-style: solid;
-        border-color: #ababab;
-        border-width: 1px;
-        width: 290.66px;
-        height: 210.45px;
-        position: absolute;
-        left: 953.31px;
-        top: 416.13px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .silla6 {
-        color: #000000;
-        text-align: left;
-        font: 400 24px "Inter", sans-serif;
-        position: absolute;
-        left: 969.79px;
-        top: 642.76px;
-        width: 146.63px;
-        height: 28.78px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .rectangle-86 {
-        background: #3a86ff;
-        border-radius: 10px;
-        width: 116.26px;
-        height: 32.38px;
-        position: absolute;
-        left: 1116.43px;
-        top: 642.76px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-    .ver-producto6 {
-        color: #ffffff;
-        text-align: left;
-        font: 400 18px "Inter", sans-serif;
-        position: absolute;
-        left: 1125.97px;
-        top: 648.16px;
-        width: 97.18px;
-        height: 20.69px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-                            </style>
