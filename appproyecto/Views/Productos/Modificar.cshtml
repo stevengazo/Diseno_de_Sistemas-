@@ -6,50 +6,89 @@
 
 
 
-<div class="container p-1" style="background-color:lightgrey;">
+<div class="container p-1">
     <div class="row">
         <div class="col btn ">
             <h1>
-                Modificar Producto
+               Modificar Producto
             </h1>
         </div>
     </div>
     <div class="row m-1">
         <div class="col">
-            <h6>
+            <h4>
                 Nombre
-            </h6>
+            </h4>
         </div>
         <div class="col from-group">
             <input type="text" class="form-control" />
+            <p><i>Con este nombre las personas verán tu producto</i></p>
         </div>
     </div>
     <div class="row m-1">
         <div class="col">
-            <h6>
+            <h4>
                 Precio
-            </h6>
+            </h4>
         </div>
         <div class="col from-group">
             <input type="text" class="form-control" />
+            <p><i>Monto que vas a cobrar por tu producto</i></p>
         </div>
     </div>
     <div class="row m-1">
         <div class="col">
-            <h6>
-                Nombre
-            </h6>
+            <h4>
+                Existencias
+            </h4>
+        </div>
+        <div class="col from-group">
+            <input type="number" class="form-control" />
+            <p><i>Cantidad de existencias disponibles</i></p>
+        </div>
+    </div>
+    <div class="row m-1">
+        <div class="col">
+            <h4>
+                Descripción
+            </h4>
         </div>
         <div class="col from-group">
             <input type="text" class="form-control" />
+            <p><i>Describe tu información</i></p>
         </div>
     </div>
-
+    <div class="row m-1">
+        <div class="col">
+            <h4>
+                Imagen
+            </h4>
+        </div>
+        <div class="col from-group">
+            <input type="file" class="form-control" />
+            <p><i>Imagenes para poder identificar tu producto</i></p>
+        </div>
+    </div>
+    <div class="row m-1">
+        <div class="col">
+            <h4>
+                Categoria
+            </h4>
+        </div>
+        <div class="col from-group">
+            <select class="form-control">
+                <option>Auto</option>
+                <option>Hogar</option>
+            </select>
+            <p><i>Seleccione una categoria adecuada</i></p>
+        </div>
+    </div>
     <div class="row m-1">
         <div class="col d-flex justify-content-around">
-            <button class="btn btn-outline-success bg-light">
+            <a asp-controller="Productos" asp-action="VerProducto" class="btn btn-outline-success bg-light">
                 Actualizar
-            </button>
+            </a>
+
             <button class="btn btn-outline-danger bg-light">
                 Cancelar
             </button>
@@ -57,6 +96,8 @@
 
     </div>
 </div>
+
+
 
 
 
