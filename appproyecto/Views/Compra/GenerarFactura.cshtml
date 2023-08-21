@@ -3,73 +3,106 @@
     Layout = "MaintLayout";
 }
 
-<div class="container border border-2 align-self-center">
+<div class="container  align-self-center">
 
 
-	<div class="row border border-2 m-1">
-		<div class="col d-flex justify-content-center m-1"><strong>Informaci&oacute;n de Pedido</strong></div>
-	</div>
+    <div class="row  m-1">
+        <div class="col d-flex justify-content-center m-1"><h2>Información de Pedido</h2></div>
+    </div>
 
 
 
-	<div class="row border border-2 m-1">
+    <div class="row  m-1">
 
-		<div class="col d-flex align-items-start d-flex justify-content-center m-1">
-			<img class="img-thumbnail rounded float-start" width="200" alt="..." src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" />
-		</div>
+        <div class="col d-flex align-items-start d-flex justify-content-center m-1">
+            <img class="img-thumbnail rounded float-start" width="200" alt="..." src="https://m.media-amazon.com/images/I/71R+gula5rL._AC_UF894,1000_QL80_.jpg" />
+        </div>
 
-		<div class="col align-middle align-self-center m-1">
-			<p>Nombre: Nombre Producto</p>
-			<p>Precio: $5000</p>
-			<p>Categor&iacute;a: Nombre Categor&iacute;a</p>
-		</div>
+        <div class="col align-middle align-self-center m-1">
+            <p>Nombre: Nombre Producto</p>
+            <p>Precio: $5000</p>
+            <p>Categor&iacute;a: Nombre Categor&iacute;a</p>
+        </div>
 
-	</div>
-
-
-	<div class="row border border-2 align-middle m-1">
-		
-		<div class="col align-middle d-flex justify-content-center align-self-center m-1">
-			<ul class="navbar-nav flex-grow-2  w-75 gap-2 align-middle">
-				<li class="nav-item border rounded  p-1 d-flex justify-content-center m-1">
-					<a type="button" class="btn btn-outline-danger bg-light m-1" asp-controller="Productos" asp-action="VerProducto">Anular</a>
-				</li>
-				<!--<li class="nav-item border rounded  p-1  d-flex justify-content-center m-1">
-					<button type="button" class="btn btn-success">Completar</button>
-				</li>-->
-				<li class="nav-item border rounded  p-1 d-flex justify-content-center m-1">
-					<button type="button" class="btn btn-outline-info bg-light m-1">Generar Factura</button>
-				</li>
-			</ul>
-		</div>
+    </div>
 
 
-		<div class="col align-middle m-1">
+    <div class="row  align-middle m-1">
 
-			<p>Esta persona esta solicitando m&aacute;s informaci&oacute;n de este pedido.&nbsp;Comunicate con ella para m&aacute;s informaci&oacute;n</p>
+        <h4>
+            Información Comprador
+        </h4>
+        <!-- tabla de Comprador-->
+        <table class="table table-hover table-light">
+            <tbody>
+                <tr>
+                    <th>
+                        Nombre
+                    </th>
+                    <td>
+                        Nombre usuario
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Ubicación
+                    </th>
+                    <td>
+                        Ubicación usuario
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Cantidad
+                    </th>
+                    <td>
+                        1 unidad
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Telefono
+                    </th>
+                    <td>
+                        8888-8888
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>
+            Información Vendedor
+        </h4>
+        <!-- tabla de Vendedor-->
+        <table class="table table-hover table-light">
+            <tbody>
+                <tr>
+                    <th>
+                        Nombre
+                    </th>
+                    <td>
+                        Nombre usuario
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Telefono
+                    </th>
+                    <td>
+                        8888-8888
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-			<p>Nombre: Nombre usuario</p>
 
-			<p>Ubicaci&oacute;n: Ubicaci&oacute;n usuario</p>
+        <div class=" d-flex flex-row justify-content-around">
+            <a type="button" class="btn btn-outline-danger bg-light m-1" asp-controller="Productos" asp-action="VerProducto">Anular</a>
+            <button type="button" class="btn btn-outline-info bg-light m-1">Generar Factura</button>
+        </div>
 
-			<p>Cantidad: Cantidad del producto</p>
 
-			<p>Tel&eacute;fono: Num. Tel&eacute;fono</p>
 
-			<p>M&eacute;todo de pago: Tarjeta.</p>
-		</div>
-
-		<div class="col align-middle m-1">
-
-			<p><br><br></p>
-
-			<p>Nombre: Nombre Vendedor</p>
-
-			<p>Tel&eacute;fono: Num. Tel&eacute;fono Vendedor</p>
-
-		</div>
-
-	</div>
+    </div>
 
 
 </div>
