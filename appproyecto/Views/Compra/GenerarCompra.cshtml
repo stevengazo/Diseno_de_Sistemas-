@@ -1,5 +1,5 @@
 ﻿@{
-	ViewData["Title"] = "Create";
+	ViewData["Title"] = "Comprar";
 	Layout = "MaintLayout";
 }
 
@@ -32,13 +32,13 @@
 		<div class="col align-middle d-flex justify-content-center align-self-center m-1">
 			<ul class="navbar-nav flex-grow-2  w-75 gap-2 align-middle">
 				<li class="nav-item border rounded  p-1 d-flex justify-content-center m-1">
-					<a type="button" class="btn btn-danger" asp-controller="Productos" asp-action="VerProducto">Anular</a>
+					<a type="button" class="btn btn-outline-danger bg-light m-1" asp-controller="Productos" asp-action="VerProducto">Anular</a>
 				</li>
 				<!--<li class="nav-item border rounded  p-1  d-flex justify-content-center m-1">
 					<button type="button" class="btn btn-success">Completar</button>
 				</li>-->
 				<li class="nav-item border rounded  p-1 d-flex justify-content-center m-1">
-					<a type="button" class="btn btn-light" asp-controller="Compra" asp-action="GenerarFactura">Completar Compra</a>
+					<a type="button" class="btn btn-outline-info bg-light m-1" asp-controller="Compra" asp-action="GenerarFactura">Completar Compra</a>
 				</li>
 			</ul>
 		</div>

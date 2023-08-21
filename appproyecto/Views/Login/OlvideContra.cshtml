@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Olvidé Contraseña";
+    Layout = "MaintLayout";
+}
+
+<div class="container border border-2 align-self-center w-25">
+
+    <div class="nav-item d-flex justify-content-center m-1">
+        <label for="exampleFormControlTextarea1" class="form-label" style="text-align:center">Ingrese su correo electrónico para que sea enviado el link de cambio de contraseña</label>
+    </div>
+    <div class="nav-item d-flex justify-content-center m-1">
+        <input type="email" class="form-control"/>
+     </div>
+
+    <div class="row nav-item d-flex justify-content-center m-1">
+        <a class="btn btn-outline-info bg-light m-1 w-25" asp-controller="Login" asp-action="Login">Enviar link</a>
+    </div>
+
+</div>
