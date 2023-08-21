@@ -13,6 +13,10 @@ namespace appproyecto.Controllers
             return View();
         }
 
+        public IActionResult ProductosPorCategoria()
+        {
+            return View();
+        }
         public IActionResult Agregar()
         {
             return View();

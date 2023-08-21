@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.bg-graylight {
+    background: rgb(92,92,92);
+    background: linear-gradient(0deg, rgba(92,92,92,1) 0%, rgba(148,148,148,1) 33%, rgba(184,184,184,1) 54%, rgba(255,255,255,1) 100%);
+}
