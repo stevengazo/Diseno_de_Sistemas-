@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col d-flex justify-content-between">
             <h1>
-                Publicación
+                Publicación [Titulo]
             </h1>
             <h3>
                 Comentarios
@@ -17,85 +17,86 @@
         </div>
     </div>
     <div class="row">
-        <div class="col d-flex flex-column">
+        <div class="col d-flex  flex-column">
             <!-- Publicación-->
-            <img class="img-floid" height="400" width="500" src="https://puravida.com/wp-content/uploads/2012/10/Heredia_Costa_Rica1.jpg" />
-            <p>
-                Autor
-            </p>
-
-            <h5>
-                Descripción
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ex ex. Ut dictum ultrices felis vitae mattis. Nulla vel faucibus leo, eu luctus diam. Donec vitae dolor placerat, ullamcorper enim sit amet, tristique velit. Donec iaculis, mauris eu dapibus bibendum, lectus ante molestie orci, a aliquam purus elit nec ante. Nunc finibus ex quis fringilla tempus. Praesent sit amet nulla erat. Ut volutpat lacus sit amet nibh iaculis mollis. Vivamus ornare molestie e
-            </p>
+            <div class="d-flex justify-content-center align-content-center">
+                <img class="img-floid rounded align-items-center" height="400" width="500" src="https://puravida.com/wp-content/uploads/2012/10/Heredia_Costa_Rica1.jpg" />
+            </div>
+            
+            <div>
+                <p>
+                    <b>Autor</b>
+                    <i>[Autor]</i>
+                </p>
+                <h5>
+                    Descripción
+                </h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ex ex. Ut dictum ultrices felis vitae mattis. Nulla vel faucibus leo, eu luctus diam. Donec vitae dolor placerat, ullamcorper enim sit amet, tristique velit. Donec iaculis, mauris eu dapibus bibendum, lectus ante molestie orci, a aliquam purus elit nec ante. Nunc finibus ex quis fringilla tempus. Praesent sit amet nulla erat. Ut volutpat lacus sit amet nibh iaculis mollis. Vivamus ornare molestie e
+                </p>
+            </div>
+            
 
         </div>
         <div class="col col-3 d-flex flex-column">
-            <div class="d-flex flex-column border border-success p-1 rounded">
+            <div class="d-flex flex-column border border-success p-2 rounded">
                 <label>
-                    Nuevo Comentario
+                    <h5>
+                        Nuevo Comentario
+                    </h5>    
                 </label>
                 <input type="text" class="form-control m-1 border-success" />
                 <button class="btn btn-outline-success m-1">
                     Agregar Comentario
                 </button>
             </div>
-            <div class="d-flex  m-1 justify-content-center align-items-center flex-column ">
+            <div class="d-flex  mt-1 justify-content-center align-items-center flex-column ">
                 <div class="d-flex flex-column overflow-scroll">
-
-
-                    <div class="card m-1" style="width: 12rem;">
-                        <div class="card-body">
-                            <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle mb-2 text-muted">Autor</a>
-                            <p class="card-text">Comentario.....</p>
-                        </div>
+<!-- Comentario item-->
+                <div class="card m-1" style="width: 15rem;">
+                    <div class="card-body">
+                        <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle text-decoration-none mb-2 text-muted">Autor</a>
+                        <p class="card-text">Comentario.....</p>
                     </div>
-
-
-
-                    <div class="card m-1" style="width: 12rem;">
-                        <div class="card-body">
-                            <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle mb-2 text-muted">Autor</a>
-                            <p class="card-text">Comentario.....</p>
-                        </div>
+                </div>
+                <!-- Comentario item-->
+                <div class="card m-1" style="width: 15rem;">
+                    <div class="card-body">
+                        <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle text-decoration-none mb-2 text-muted">Autor</a>
+                        <p class="card-text">Comentario.....</p>
                     </div>
-
-                    
-
-                    <div class="card m-1" style="width: 12rem;">
-                        <div class="card-body">
-                            <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle mb-2 text-muted">Autor</a>
-                            <p class="card-text">Comentario.....</p>
-                        </div>
+                </div>             
+                <!-- Comentario item-->
+                <div class="card m-1" style="width: 15rem;">
+                    <div class="card-body">
+                        <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle text-decoration-none mb-2 text-muted">Autor</a>
+                        <p class="card-text">Comentario.....</p>
                     </div>
-
-                    
-
-                    <div class="card m-1" style="width: 12rem;">
-                        <div class="card-body">
-                            <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle mb-2 text-muted">Autor</a>
-                            <p class="card-text">Comentario.....</p>
-                        </div>
+                </div>              
+                <!-- Comentario item-->
+                <div class="card m-1" style="width: 15rem;">
+                    <div class="card-body">
+                        <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle text-decoration-none mb-2 text-muted">Autor</a>
+                        <p class="card-text">Comentario.....</p>
                     </div>
-
-
-
-                    <div class="card m-1" style="width: 12rem;">
-                        <div class="card-body">
-                            <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle mb-2 text-muted">Autor</a>
-                            <p class="card-text">Comentario.....</p>
-                        </div>
+                </div>              
+                <!-- Comentario item-->
+                <div class="card m-1" style="width: 15rem;">
+                    <div class="card-body">
+                        <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle text-decoration-none mb-2 text-muted">Autor</a>
+                        <p class="card-text">Comentario.....</p>
                     </div>
-
-
-
+                </div>             
+                <!-- Comentario item-->
+                <div class="card m-1" style="width: 15rem;">
+                    <div class="card-body">
+                        <a asp-controller="User" asp-action="VerUsuario" class="card-subtitle text-decoration-none mb-2 text-muted">Autor</a>
+                        <p class="card-text">Comentario.....</p>
+                    </div>
+                </div>              
+               
 
                 </div>
-
-
-
             </div>
         </div>
     </div>
